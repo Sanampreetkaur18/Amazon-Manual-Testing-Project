@@ -1,0 +1,12 @@
+Test Case ID,Module / Feature,Test Scenario,Pre-conditions,Test Steps,Expected Result,Priority
+TC_001,Login,Valid Login,User on homepage,1. Click 'Sign In'   2. Enter valid email & password   3. Click 'Sign In',User logged in successfully and redirected to homepage,High
+TC_002,Login,Invalid Login,User on homepage,1. Click 'Sign In'   2. Enter invalid email/password   3. Click 'Sign In',Error message 'Incorrect email or password',High
+TC_003,Login,Empty Credentials,User on homepage,1. Click 'Sign In'   2. Leave email/password blank     3. Click 'Sign In',Error message 'Enter email and password',Medium
+TC_004,Search,Product Search,User logged in,1. Enter product name in search bar    2. Click 'Search',Relevant products displayed,Medium
+TC_005,Search,Apply Filters,User logged in and search results visible,"1. Apply filters (Price, Brand, Ratings)",Products filtered correctly,Medium
+TC_006,Cart,Add Product,Product available in search,1. Click on product    2. Click 'Add to Cart',Product added; cart count updated,High
+TC_007,Cart,Remove Product,Product already added in cart,1. Go to Cart      2. Click 'Remove' on product,Product removed; cart count updated,High
+TC_008,Cart,View Cart,User has products in cart,1. Go to Cart,All added products visible with correct quantity & price,Medium
+TC_009,Checkout,Checkout Navigation,Products in cart,1. Click 'Proceed to Checkout'     2. Enter dummy shipping     3. Choose payment (simulation)      4. Click 'Place Order',Navigates to confirmation page (simulation only),High
+TC_010,Logout,Logout Functionality,User logged in,1. Click profile/account    2. Click 'Sign Out',User logged out; redirected to homepage,High
+TC_011,Session,Session Expiry,User logged in,1. Stay idle for 30+ minutes    2. Try to perform any action,User redirected to login page after session expires,Medium
